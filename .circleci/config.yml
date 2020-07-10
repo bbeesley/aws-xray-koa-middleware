@@ -59,6 +59,7 @@ workflows:
             tags:
               ignore: /.*/
       - publish:
+          context: personal-projects
           requires:
             - build
           filters:
