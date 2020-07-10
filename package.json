@@ -1,6 +1,6 @@
 {
   "name": "aws-xray-sdk-koa2",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "The AWS X-Ray Koa v2 package automatically records information for incoming and outgoing requests and responses.",
   "engines": {
     "node": ">=12.13.0"
