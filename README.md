@@ -15,7 +15,7 @@ The AWS X-Ray Koa v2 package automatically records information for incoming and 
 
 ### createMiddleware
 
-[src/index.ts:23-115](https://github.com/bbeesley/aws-xray-sdk-koa2/blob/b12658062e87acf55fe7717fb2173115ec1adf78/src/index.ts#L23-L115 "Source code on GitHub")
+[src/index.ts:22-114](https://github.com/bbeesley/aws-xray-koa-middleware/blob/78de6106d092788cfb595e41fb0a22bb5dbde78a/src/index.ts#L22-L114 "Source code on GitHub")
 
 Creates the koa middleware function
 
