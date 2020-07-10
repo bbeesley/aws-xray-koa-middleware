@@ -8,19 +8,18 @@ import {
   utils,
 } from 'aws-xray-sdk-core';
 import { ServerResponse } from 'http';
-import { Context, Next } from 'koa';
+import { Context, Middleware, Next } from 'koa';
 
 const { IncomingRequestData } = middleware;
 
 /**
- * Use 'app.use(AWSXRayKoa.openSegment('defaultName'))' before defining your routes.
- * Use AWSXRay.getSegment() to access the current sub/segment.
- * Otherwise, for manual mode, this appends the Segment object to the request object as req.segment.
- * @param {string} defaultName - The default name for the segment.
- * @alias module:koa_mw.openSegment
- * @returns {function}
+ * Creates the koa middleware function
+ *
+ * @export
+ * @param {string} defaultName - Service name for XRay
+ * @returns {Middleware} - The middleware function
  */
-export default function createMiddleware(defaultName: string) {
+export default function createMiddleware(defaultName: string): Middleware {
   if (!defaultName || typeof defaultName !== 'string')
     throw new Error(
       'Default segment name was not supplied.  Please provide a string.'
