@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Koa middleware createMiddleware should throw an error if no default name is supplied 1`] = `"Default segment name was not supplied.  Please provide a string."`;
