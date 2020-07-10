@@ -1,5 +1,5 @@
 {
-  "name": "aws-xray-sdk-koa2",
+  "name": "aws-xray-koa-middleware",
   "version": "1.0.0",
   "description": "The AWS X-Ray Koa v2 package automatically records information for incoming and outgoing requests and responses.",
   "engines": {
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbeesley/aws-xray-sdk-koa2.git"
+    "url": "git+https://github.com/bbeesley/aws-xray-koa-middleware.git"
   },
   "author": "Bill Beesley <bill@beesley.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bbeesley/aws-xray-sdk-koa2/issues"
+    "url": "https://github.com/bbeesley/aws-xray-koa-middleware/issues"
   },
-  "homepage": "https://github.com/bbeesley/aws-xray-sdk-koa2#readme",
+  "homepage": "https://github.com/bbeesley/aws-xray-koa-middleware#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
