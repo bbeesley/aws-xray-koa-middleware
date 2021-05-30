@@ -113,7 +113,7 @@
     "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "husky": "^6.0.0",
-    "jest": "^26.1.0",
+    "jest": "^27.0.3",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
     "middy": "^0.36.0",
