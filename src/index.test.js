@@ -4,7 +4,7 @@ import Application from 'koa';
 import createError from 'http-errors';
 import { IncomingMessage, ServerResponse } from 'http';
 import { Socket } from 'net';
-import { IncomingRequestData } from 'aws-xray-sdk-core/lib/middleware/mw_utils';
+import { IncomingRequestData } from 'aws-xray-sdk-core/dist/lib/middleware/mw_utils';
 import createMiddleware from './index';
 
 jest.mock('aws-xray-sdk-core');
