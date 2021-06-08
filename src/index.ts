@@ -40,7 +40,7 @@ export default function createMiddleware(defaultName: string): Middleware {
       middleware.resolveSampling(
         amznTraceHeader,
         ctx.segment,
-        (ctx as unknown) as ServerResponse
+        ctx as unknown as ServerResponse
       );
       ctx.segment.addIncomingRequestData(new IncomingRequestData(ctx.req));
 
@@ -84,9 +84,8 @@ export default function createMiddleware(defaultName: string): Middleware {
         await next();
         if (ctx.status === 429) ctx.segment.addThrottleFlag();
         if (utils.getCauseTypeFromHttpStatus(ctx.status))
-          ctx.segment[
-            utils.getCauseTypeFromHttpStatus(ctx.status) as string
-          ] = true;
+          ctx.segment[utils.getCauseTypeFromHttpStatus(ctx.status) as string] =
+            true;
 
         ctx.segment.http.close(ctx);
         ctx.segment.close();
@@ -95,9 +94,8 @@ export default function createMiddleware(defaultName: string): Middleware {
       if (ctx.segment && err) {
         if (ctx.status === 429) ctx.segment.addThrottleFlag();
         if (utils.getCauseTypeFromHttpStatus(ctx.status))
-          ctx.segment[
-            utils.getCauseTypeFromHttpStatus(ctx.status) as string
-          ] = true;
+          ctx.segment[utils.getCauseTypeFromHttpStatus(ctx.status) as string] =
+            true;
         ctx.segment.http.close(ctx);
         ctx.segment.close(err);
 
