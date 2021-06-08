@@ -10,17 +10,17 @@ The AWS X-Ray Koa v2 package automatically records information for incoming and 
 
 #### Table of Contents
 
--   [createMiddleware](#createmiddleware)
-    -   [Parameters](#parameters)
+*   [createMiddleware](#createmiddleware)
+    *   [Parameters](#parameters)
 
 ### createMiddleware
 
-[src/index.ts:22-114](https://github.com/bbeesley/aws-xray-koa-middleware/blob/78de6106d092788cfb595e41fb0a22bb5dbde78a/src/index.ts#L22-L114 "Source code on GitHub")
+[src/index.ts:22-112](https://github.com/bbeesley/aws-xray-koa-middleware/blob/02275e2f8c139372de7d407ec490524c72dbe26f/src/index.ts#L22-L112 "Source code on GitHub")
 
 Creates the koa middleware function
 
 #### Parameters
 
--   `defaultName` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Service name for XRay
+*   `defaultName` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Service name for XRay
 
 Returns **Middleware** The middleware function
