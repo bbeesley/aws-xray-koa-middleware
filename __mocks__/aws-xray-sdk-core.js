@@ -1,4 +1,4 @@
-const AWSXRay = require('aws-xray-sdk-core/lib/aws-xray');
+const AWSXRay = require('aws-xray-sdk-core/dist/lib/aws-xray');
 
 const { Segment } = AWSXRay;
 
