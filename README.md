@@ -1,3 +1,6 @@
+[![test-and-publish](https://github.com/bbeesley/aws-xray-koa-middleware/actions/workflows/test-and-publish.yml/badge.svg)](https://github.com/bbeesley/aws-xray-koa-middleware/actions/workflows/test-and-publish.yml) [![codecov](https://codecov.io/gh/bbeesley/aws-xray-koa-middleware/branch/master/graph/badge.svg?token=kyNHIqr7GY)](https://codecov.io/gh/bbeesley/aws-xray-koa-middleware) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
+
 # aws-xray-koa-middleware
 
 ## Description
