@@ -28,7 +28,8 @@ jobs:
       - run: npx commitlint --from HEAD~${{ github.event.pull_request.commits }} --to HEAD
       - name: test
         run: npm test
-      - uses: codecov/codecov-action@v1
+      - name: upload codecov
+        uses: codecov/codecov-action@v1
         with:
           files: coverage/lcov.info
   lint-commits:
