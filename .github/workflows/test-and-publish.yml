@@ -25,7 +25,6 @@ jobs:
       - name: install
         run: |
           npm ci
-      - run: npx commitlint --from HEAD~${{ github.event.pull_request.commits }} --to HEAD
       - name: test
         run: npm test
       - name: upload codecov
