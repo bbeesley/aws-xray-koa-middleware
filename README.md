@@ -1,6 +1,5 @@
 [![test-and-publish](https://github.com/bbeesley/aws-xray-koa-middleware/actions/workflows/test-and-publish.yml/badge.svg)](https://github.com/bbeesley/aws-xray-koa-middleware/actions/workflows/test-and-publish.yml) [![codecov](https://codecov.io/gh/bbeesley/aws-xray-koa-middleware/branch/master/graph/badge.svg?token=kyNHIqr7GY)](https://codecov.io/gh/bbeesley/aws-xray-koa-middleware) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-
 # aws-xray-koa-middleware
 
 ## Description
@@ -18,7 +17,7 @@ The AWS X-Ray Koa v2 package automatically records information for incoming and 
 
 ### createMiddleware
 
-[src/index.ts:22-112](https://github.com/bbeesley/aws-xray-koa-middleware/blob/02275e2f8c139372de7d407ec490524c72dbe26f/src/index.ts#L22-L112 "Source code on GitHub")
+[src/index.ts:22-112](https://github.com/bbeesley/aws-xray-koa-middleware/blob/a50181af7056d33237788294f68154161e4104e1/src/index.ts#L22-L112 "Source code on GitHub")
 
 Creates the koa middleware function
 
