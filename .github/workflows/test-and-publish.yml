@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: ${{ !contains( github.event.head_commit.message, 'skip-ci' ) && github.event_name != 'pull_request_target') }}
+    if: ${{ !contains( github.event.head_commit.message, 'skip-ci' ) && github.event_name != 'pull_request_target' }}
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v2
@@ -87,7 +87,7 @@ jobs:
       #     npm publish | true
   automerge:
     runs-on: ubuntu-latest
-    if: ${{ github.ref != 'refs/heads/master' && github.actor == 'dependabot[bot]' && github.event_name == 'pull_request_target') }}
+    if: ${{ github.ref != 'refs/heads/master' && github.actor == 'dependabot[bot]' && github.event_name == 'pull_request_target' }}
     timeout-minutes: 5
     steps:
       - name: automerge
