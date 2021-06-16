@@ -87,7 +87,7 @@ jobs:
       #     npm publish | true
   automerge:
     runs-on: ubuntu-latest
-    if: ${{ github.ref != 'refs/heads/master' && github.actor == 'dependabot[bot]' && github.event_name == 'pull_request_target' }}
+    if: ${{ github.event_name == 'pull_request_target' }}
     timeout-minutes: 5
     steps:
       - name: automerge
