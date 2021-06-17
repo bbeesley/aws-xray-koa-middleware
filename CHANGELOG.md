@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/bbeesley/aws-xray-koa-middleware/compare/v1.1.2...v1.1.3) (2021-06-17)
+
+
+### Bug Fixes
+
+* **compile:** fix ts version error ([#414](https://github.com/bbeesley/aws-xray-koa-middleware/issues/414)) ([efa5e73](https://github.com/bbeesley/aws-xray-koa-middleware/commit/efa5e7373b1b678e7e5e17aba1366d97d57e84d3))
+
 ## [1.1.2](https://github.com/bbeesley/aws-xray-koa-middleware/compare/v1.1.1...v1.1.2) (2021-06-14)
 
 ## [1.1.1](https://github.com/bbeesley/aws-xray-koa-middleware/compare/v1.1.0...v1.1.1) (2021-06-08)
