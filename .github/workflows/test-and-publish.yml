@@ -19,3 +19,14 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PA_TOKEN }}
+  lint-commits:
+    runs-on: ubuntu-latest
+    if: ${{ (github.actor == 'dependabot[bot]' && github.event_name == 'pull_request_target') || (github.ref != 'refs/heads/master' && github.event_name == 'push') }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v2
+      - name: commitlint
+        run: npx commitlint --from HEAD~${{ github.event.pull_request.commits }} --to HEAD
