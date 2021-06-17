@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14.15'
-      - uses: bbeesley/build-test-merge-publish@v0.0.0
+      - uses: bbeesley/build-test-merge-publish@v0
         with:
           main-branch: master
         env:
