@@ -108,7 +108,7 @@
     "@types/koa": "^2.13.3",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
-    "babel-jest": "^27.0.2",
+    "babel-jest": "^28.0.1",
     "conventional-changelog-angular": "^5.0.12",
     "cz-conventional-changelog": "^3.3.0",
     "documentation": "^13.2.5",
